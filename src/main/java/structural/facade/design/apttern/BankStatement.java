@@ -12,5 +12,40 @@ package structural.facade.design.apttern;
   implement those.
 
  */
+
+
 public class BankStatement {
+
+    private StatementHeader statementHeader;
+    private StatementBody statementBody;
+    private StatementFooter statementFooter;
+
+
+    public BankStatement() {
+
+    }
+
+    public void setStatementBody(StatementBody bankStatementBody) {
+        this.statementBody = bankStatementBody;
+    }
+
+    public StatementHeader getHeader() {
+        return this.statementHeader;
+    }
+
+    public void setHeader(StatementHeader statementHeader) {
+        this.statementHeader = statementHeader;
+    }
+
+    public StatementFooter getFooter() {
+        return this.statementFooter;
+    }
+
+    public StatementBody getBody() {
+        return this.statementBody;
+    }
+
+    public void setFooter(StatementFooter statementFooter) {
+        this.statementFooter = statementFooter;
+    }
 }
